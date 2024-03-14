@@ -69,6 +69,7 @@ export const UserBlogs = () => {
                             console.log(forDate.split("-"))
                         
                 return (
+                  <div className="container">
                     <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8 ">
 
                         <div  className="card w-auto h-auto bg-info shadow-xl border-red-950 " key={blogs._id} > </div>
@@ -81,12 +82,14 @@ export const UserBlogs = () => {
                             </div>
                             <div><p className="text-bold text-sky-500">{forDate.toString()}</p></div>
 
-                                <button className="btn btn-error w-fit" onClick={()=>handleDeleteBlog(blogs._id)}>Delete</button>
+                                <button className="btn btn-error w-fit py- 2" onClick={()=>handleDeleteBlog(blogs._id)}>Delete</button>
                             </div>
+                    </div>
                     </div>
                 )
             })}
-        </div>)}
+        </div>
+        )}
 
                
 

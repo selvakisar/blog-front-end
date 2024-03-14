@@ -48,20 +48,22 @@ export const AllBlog=()=>{
                 console.log(forDate.split("-"))
 
                 return (
-                    <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8 "key={blogs._id}>
+            <div className="container">
+                        <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8 "key={blogs._id}>
 
-                        <div  className="card w-auto h-auto bg-info shadow-xl border-red-950 " id={blogs._id}> </div>
-                        <div className="card-body">
+<div  className="card w-auto h-auto bg-info shadow-xl border-red-950 " id={blogs._id}> </div>
+<div className="card-body">
 
-                            <h2 className="text-xl text-pink-700 font-bold border-solid 3px to-blue-100" key={blogs._id} >{blogs.title}</h2> 
-                            <div className="bg border-x-gray-900 text-lime-800  ">
-                                {blogs.blog}
+    <h2 className="text-xl text-pink-700 font-bold border-solid 3px to-blue-100" key={blogs._id} >{blogs.title}</h2> 
+    <div className="bg border-x-gray-900 text-lime-800  ">
+        {blogs.blog}
 
-                            </div>
-                            <div><p className="text-bold text-sky-500">posted on {forDate.toString()}</p></div>
-                                    
-                            </div>
-                    </div>
+    </div>
+    <div><p className="text-bold text-sky-500">posted on {forDate.toString()}</p></div>
+            
+    </div>
+</div>
+            </div>
                 )
             })}
         </div>)}

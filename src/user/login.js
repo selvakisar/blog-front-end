@@ -104,7 +104,7 @@ function Loginform({email,setEmail,setPassword,password ,loginUser}){
 
 
     return(
-        <div>
+        <div >
              <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
   <div className="sm:mx-auto sm:w-full sm:max-w-sm">
     <img className="mx-auto h-10 w-auto" src="https://pbwebdev.co.uk/wp-content/uploads/2018/12/blogs-862x539.jpg" alt="Your Company"/>
@@ -149,6 +149,9 @@ function Loginform({email,setEmail,setPassword,password ,loginUser}){
       Don't have  an Account ?
         <a href="/signup" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500" >signup</a>
     </p>
+
+
+     
   </div>
 </div>
         </div>
